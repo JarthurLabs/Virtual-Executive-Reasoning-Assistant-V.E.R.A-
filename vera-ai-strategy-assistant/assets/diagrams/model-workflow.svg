@@ -1,0 +1,47 @@
+<svg width="1100" height="680" viewBox="0 0 1100 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#667085"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="680" fill="#f7f8fb"/>
+  <text x="550" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#202733">V.E.R.A. Model Workflow</text>
+  <text x="550" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5b6472">From user request to strategic response</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="90" y="150" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="220" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">1. Receive Request</text>
+    <text x="220" y="211" text-anchor="middle" font-size="13" fill="#5b6472">Question, task, or decision</text>
+
+    <rect x="420" y="150" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="550" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">2. Classify Topic</text>
+    <text x="550" y="211" text-anchor="middle" font-size="13" fill="#5b6472">Career, cyber, money, health</text>
+
+    <rect x="750" y="150" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="880" y="184" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">3. Retrieve Context</text>
+    <text x="880" y="211" text-anchor="middle" font-size="13" fill="#5b6472">Goals, preferences, constraints</text>
+
+    <rect x="255" y="330" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="385" y="364" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">4. Apply Rules</text>
+    <text x="385" y="391" text-anchor="middle" font-size="13" fill="#5b6472">ROI, risk, tradeoffs, clarity</text>
+
+    <rect x="585" y="330" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="715" y="364" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">5. Generate Output</text>
+    <text x="715" y="391" text-anchor="middle" font-size="13" fill="#5b6472">Recommendation + explanation</text>
+
+    <rect x="420" y="510" width="260" height="88" rx="16" fill="#ffffff" stroke="#c9d2e3" filter="url(#shadow)"/>
+    <text x="550" y="544" text-anchor="middle" font-size="17" font-weight="700" fill="#202733">6. Think Ahead</text>
+    <text x="550" y="571" text-anchor="middle" font-size="13" fill="#5b6472">Blind spots + next best step</text>
+  </g>
+
+  <g stroke="#667085" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
+    <path d="M350 194 L420 194"/>
+    <path d="M680 194 L750 194"/>
+    <path d="M805 238 C735 300 590 322 515 345"/>
+    <path d="M515 374 L585 374"/>
+    <path d="M715 418 C690 472 630 498 590 510"/>
+  </g>
+</svg>
