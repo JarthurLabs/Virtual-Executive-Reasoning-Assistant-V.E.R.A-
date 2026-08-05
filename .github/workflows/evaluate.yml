@@ -1,0 +1,38 @@
+name: Evaluate V.E.R.A. contract
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vera-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild deterministic evaluation evidence
+        run: python scripts/run_evaluations.py
+      - name: Confirm committed evidence is current
+        run: git diff --exit-code -- evaluation/results.json
+      - name: Scan public text for common credential patterns
+        run: |
+          if grep -RInE --include='*.md' --include='*.py' --include='*.json' --include='*.yml' \
+            '(-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16})' .; then
+            echo "Potential credential material found"
+            exit 1
+          fi
+
