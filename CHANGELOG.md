@@ -1,44 +1,26 @@
 # Changelog
 
-## Version 1.1
+## Version 1.2
 
 ### Added
 
-- START HERE section at the top of README
-- Real cybersecurity/career sample outputs directly in README
-- Dedicated sample outputs for:
-  - Security Implementation vs SOC Analyst
-  - IAM beginner explanation
-  - GitHub portfolio review
-- Simple evaluation table with prompt, expected behavior, actual result, and pass/fail
-- `docs/evaluation-tests.md`
-- "What I Personally Built / Learned" section
-- Cleaner employer-facing framing
+- Deterministic offline response-contract demo with text and JSON output
+- Six versioned evaluation cases and reproducible result evidence
+- Seven unit tests, including negative evaluation behavior
+- Read-only GitHub Actions evaluation workflow with a credential-pattern scan
+- Explicit current-information, sensitive-data, and untrusted-instruction flags
 
 ### Changed
 
-- Cleaned project structure so reviewers open the active V.E.R.A. repo only
-- Updated README to be visible and useful from the root of the repo
-- Replaced older generic sample outputs with stronger cybersecurity/career examples
+- Reframed V.E.R.A. as a tested product/documentation framework rather than a deployed AI service
+- Replaced the hand-marked evaluation table with generated assertions
+- Clarified that screenshot assets are mockups and sample outputs are authored examples
+
+## Version 1.1
+
+- Added reviewer navigation, sample outputs, evaluation documentation, and security-aware employer framing.
 
 ## Version 1.0
 
-Initial V.E.R.A. project release.
+- Initial prompt framework, architecture, risk documentation, sample outputs, and visual assets.
 
-### Added
-
-- Professional V.E.R.A. README
-- Project overview
-- System architecture documentation
-- Memory system documentation
-- Prompt system documentation
-- Knowledge base structure
-- Model workflow
-- Roadmap
-- Lessons learned
-- Security considerations
-- Prompt engineering examples
-- Sample outputs
-- Visual assets
-- System prompt
-- Quickstart prompt
